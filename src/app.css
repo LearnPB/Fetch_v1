@@ -1,0 +1,270 @@
+/* Reset basic styles and improve cross-browser consistency */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font, background, and smooth font rendering */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f6fcf6;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: left;
+}
+
+.main-content {
+  margin: 2rem auto; /* Center content with margin */
+  padding: 2rem; /* Inner padding for spacing */
+  max-width: 1200px; /* Set a maximum width */
+  width: 90%; /* Adjust width for smaller screens */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: "Arial", sans-serif; /* Set a readable font */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Styling the paragraph inside main */
+.main-content p {
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #333; /* Text color */
+  line-height: 1.8; /* Increased line spacing */
+  margin-bottom: 1rem; /* Spacing after the paragraph */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Headings with consistent margin and improved accessibility */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* Paragraphs with improved readability */
+p {
+  margin-bottom: 1em;
+  color: #444;
+}
+
+/* Links with focus state for better accessibility */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #004a99;
+  text-decoration: underline;
+}
+
+/* Lists with consistent spacing */
+ul,
+ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  list-style-position: inside;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.5em;
+}
+.separator {
+  margin: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Buttons with base styles and focus state */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: rgb(218, 218, 237);
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: #e6e6e6;
+}
+
+/* Improved input styles */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Add basic styling for blockquotes */
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  color: #666;
+  font-style: italic;
+}
+
+/* Tables with basic styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th,
+td {
+  padding: 0.75em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+
+/* Add basic styling for code blocks */
+code {
+  font-family: monospace;
+  background-color: #ebcdcd;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Add basic styling for code blocks */
+pre {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Basic Styling */
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+  width: 100px; /* Adjust as needed */
+  appearance: none; /* Removes default number input styling (optional) */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+}
+
+/* Styling for Focus */
+input[type="number"]:focus {
+  border-color: #4caf50; /* Green on focus */
+  outline: none; /* Removes default outline */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow on focus */
+}
+
+/* Styling for Invalid Input (Optional) */
+input[type="number"]:invalid {
+  border-color: red;
+  box-shadow: none; /* Remove focus shadow if invalid */
+}
+
+/* Styling for Min/Max Indicators (Optional - Browser Specific) */
+/* These are difficult to style consistently across browsers */
+/* You might consider using custom buttons or JavaScript for better control */
+
+/* Example using spin buttons (may not work in all browsers) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Alternative approach for min/max indicators (more complex) */
+/* This involves using JavaScript to show custom messages or icons */
+
+/* Example with placeholder (if needed) */
+input[type="number"]::placeholder {
+  color: #aaa;
+}

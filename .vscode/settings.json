@@ -1,0 +1,74 @@
+{
+  "hidefiles.configurationType": "local",
+  "hidefiles.globalConfig": {
+    "profiles": [
+      {
+        "name": "Default",
+        "detail": "",
+        "description": "Test",
+        "hidden": [".vscode/"],
+        "peek": []
+      },
+      {
+        "name": "Strict",
+        "detail": "Hide everything not immediately required",
+        "hidden": [
+          "$Default",
+          ".env",
+          ".gitignore",
+          ".npmrc",
+          ".prettierignore",
+          "components.json",
+          "eslint.config.js",
+          "package-lock.json",
+          "package.json",
+          "postcss.config.js",
+          "README.md",
+          "svelte.config.js",
+          "tailwind.config.ts",
+          "tsconfig.json",
+          "vite.config.ts",
+          "node_modules/",
+          ".svelte-kit/",
+          ".prettierrc",
+          "package.json",
+          "src/routes/todos/",
+          ".env",
+          ".env",
+          "src/routes/myapi/"
+        ],
+        "peek": [
+          "svelte.config.js",
+          "tailwind.config.ts",
+          "package.json",
+          "src/routes/api/",
+          "src/routes/myapi/"
+        ]
+      }
+    ]
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    ".vscode/": true,
+    ".env": true,
+    ".gitignore": true,
+    ".npmrc": true,
+    ".prettierignore": true,
+    "components.json": true,
+    "eslint.config.js": true,
+    "package-lock.json": true,
+    "postcss.config.js": true,
+    "README.md": true,
+    "tsconfig.json": true,
+    "vite.config.ts": true,
+    "node_modules/": true,
+    ".svelte-kit/": true,
+    ".prettierrc": true,
+    "src/routes/todos/": true
+  },
+  "hidefiles.selectedProfile": "Strict"
+}
