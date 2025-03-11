@@ -2,7 +2,7 @@
   //  src\routes\sql\toplayer\+page.svelte
   // In Svelte 5, you can use the new $props rune to access data
   import TopPlayers from "../topPlayers.svelte";
-  export let data;
+  let { data } = $props();
   // console.log("Parent data:", data); // DATA LOGGING IS CORRECT
 </script>
 
