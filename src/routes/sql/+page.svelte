@@ -1,9 +1,4 @@
 <script>
-  // In Svelte 5, you can use the new $props rune to access data
-  import TopPlayers from "./topPlayers.svelte";
-
-  // Using Svelte 5 runes to get the page data
-  export let data;
 </script>
 
 <h3 class="separator">
@@ -24,12 +19,6 @@
     display their names and total earnings in a table on the page.
   </p>
 </u>
-
-<div class="container mx-auto p-4">
-  <h1 class="text-2xl font-bold mb-4">Top Players</h1>
-
-  <TopPlayers players={data.players} error={data.error} />
-</div>
 
 <style>
   /* General styling for the unordered list */
