@@ -36,3 +36,10 @@ export type AgeAggregateRow = {
   avg_months: number;
   player_count: number;
 };
+
+export type SalesTracker = {
+  id: number;
+  month: string;
+  revenue: number;
+  costs: number;
+}

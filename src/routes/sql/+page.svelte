@@ -15,6 +15,49 @@
     Use SQL to retrieve the top 10 highest paid players from the database and
     display their names and total earnings in a table on the page.
   </p>
+
+  <li>
+    <a href="/sql/sales"
+      >Table with SQL and Frontend Additional Aggregations / Transformations</a
+    >
+  </li>
+
+  <p>
+    Performing calculations like <code>grandTotal</code> and
+    <code>percentage</code>
+    on the frontend keeps data updated in real time without extra server requests.
+    This is particularly useful for real-time apps where instant updates matter.
+    Using modern JavaScript methods like <code>reduce</code>,
+    <code>map</code>, and template literals in <code>+page.ts</code> makes the code
+    more readable, maintainable, and efficient.
+  </p>
+
+  <p>
+    By structuring multiple return objects with calculated values, the frontend
+    logic remains clean while ensuring accuracy and real-time updates.
+  </p>
+
+  <pre><code>
+// Return an object with formatted and calculated fields
+return --
+    region, // Region name
+    totalSalesLabel, // Formatted total sales
+    avgSales: avgSales.toFixed(2), // Average sales formatted to 2 decimals
+    percentage: ((totalSales / grandTotal) * 100).toFixed(1), // Percentage of total sales
+;
+</code></pre>
+
+  <p>
+    While frontend calculations improve responsiveness, they can cause
+    performance issues with large datasets. Optimizing logic and considering
+    server-side processing when needed can help maintain efficiency.
+  </p>
+
+  <p>
+    But frontend calculations are convenient, they can sometimes lead to
+    performance issues if the dataset is large.
+  </p>
+
   <li><a href="/sql/playerage">Player Age in JS</a></li>
   <p>
     Implement age calculations in JavaScript using a utility file (e.g., <code
@@ -48,6 +91,15 @@
       <strong>Simplified code:</strong> Eliminates most JS-based age logic.
     </li>
   </ul>
+
+  <li>
+    <a href="/sql/salestracker">Sales Analysis Dashboard (Svelte 5)</a>
+  </li>
+  <p>
+    A sales analysis dashboard with data from SQL, using the Utils file to
+    derive values for calculations and export functions for reuse across the
+    app. The <code>+page.svelte</code> is built with Svelte 5.
+  </p>
 </ul>
 
 <style>

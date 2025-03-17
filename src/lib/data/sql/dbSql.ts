@@ -71,3 +71,5 @@ SELECT
 FROM player_ages
 GROUP BY nameId
 ORDER BY type DESC, nameId`;
+
+export const SALESTRACKER = 'SELECT id, month, revenue, costs FROM monthly_sales';

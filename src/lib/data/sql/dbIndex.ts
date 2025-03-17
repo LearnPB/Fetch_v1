@@ -2,8 +2,8 @@
 
 import Database from 'better-sqlite3';
 import { DB_PATH } from '$env/static/private';
-import { PLAYERNAME_ID, TOPPLAYERS, GETAGE, GETPLAYERAGES, GETPLAYERAGESAGGREGATED } from './dbSql';
-import type { AgeAggregateRow, Player, PlayerWithAge } from './dbTypes';
+import { PLAYERNAME_ID, TOPPLAYERS, GETAGE, GETPLAYERAGES, GETPLAYERAGESAGGREGATED, SALESTRACKER } from './dbSql';
+import type { AgeAggregateRow, Player, PlayerWithAge, SalesTracker } from './dbTypes';
 const db = new Database(DB_PATH, { verbose: console.log });
 
 
@@ -24,8 +24,8 @@ export function getTopPlayers(limit = 10): Player[] {
 }
 // ...... To check if function is working ........
 
-// const lognow = await getTopPlayers;
-// console.log(lognow);
+const lognow = await getSalesTracker;
+console.log(lognow);
 
 export function getPlayerAge(): Player[] {
   const stmt = db.prepare(GETAGE);
@@ -51,4 +51,10 @@ export function getAggregatedSalesByRegion(): { region: string; totalSales: numb
     GROUP BY region
   `);
   return stmt.all() as { region: string; totalSales: number; avgSales: number }[];
+}
+
+
+export function getSalesTracker(): SalesTracker[] {
+  const stmt = db.prepare(SALESTRACKER);
+  return stmt.all() as SalesTracker[];
 }
