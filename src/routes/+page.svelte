@@ -19,7 +19,7 @@
         </h3>
         <div class="strategy-content">
           <p class="description">
-            Fetch data from external APIs using SvelteKit's
+            Fetch data from external APIs (links) using SvelteKit's
             <code>load</code> function and server-side rendering capabilities.
           </p>
           <div class="usability">
