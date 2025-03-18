@@ -43,7 +43,8 @@
           "package.json",
           "src/routes/api/",
           "src/routes/myapi/",
-          ".env"
+          ".env",
+          ".svelte-kit/"
         ]
       }
     ]
@@ -66,7 +67,6 @@
     "tsconfig.json": true,
     "vite.config.ts": true,
     "node_modules/": true,
-    ".svelte-kit/": true,
     ".prettierrc": true,
     "src/routes/todos/": true
   },
