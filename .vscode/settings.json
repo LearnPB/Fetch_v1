@@ -7,7 +7,7 @@
         "detail": "",
         "description": "Test",
         "hidden": [".vscode/"],
-        "peek": []
+        "peek": [".vscode/"]
       },
       {
         "name": "Strict",
@@ -54,21 +54,7 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true,
-    ".vscode/": true,
-    ".gitignore": true,
-    ".npmrc": true,
-    ".prettierignore": true,
-    "components.json": true,
-    "eslint.config.js": true,
-    "package-lock.json": true,
-    "postcss.config.js": true,
-    "README.md": true,
-    "tsconfig.json": true,
-    "vite.config.ts": true,
-    "node_modules/": true,
-    ".prettierrc": true,
-    "src/routes/todos/": true
+    "**/.DS_Store": true
   },
-  "hidefiles.selectedProfile": "Strict"
+  "hidefiles.selectedProfile": "Default"
 }
